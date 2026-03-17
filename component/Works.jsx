@@ -8,7 +8,7 @@ export default function Positions() {
     {
       title: "Investor",
       company: "Multiple Ventures",
-      desc: "Actively investing in startups across finance, media, and retail sectors.",
+      desc: "Actively investing in startups across finance sectors.",
     },
     {
       title: "Author",
