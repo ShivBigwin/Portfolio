@@ -93,14 +93,14 @@
 // export default function HeroSlider() {
 //   // Animation variants with proper TypeScript types
 //   const textVariants: Variants = {
-//     hidden: { 
-//       opacity: 0, 
-//       y: 30 
+//     hidden: {
+//       opacity: 0,
+//       y: 30
 //     },
-//     visible: { 
-//       opacity: 1, 
+//     visible: {
+//       opacity: 1,
 //       y: 0,
-//       transition: { 
+//       transition: {
 //         duration: 0.8,
 //         ease: [0.25, 0.1, 0.25, 1] // Custom cubic-bezier
 //       }
@@ -120,12 +120,12 @@
 //   };
 
 //   const letterVariants: Variants = {
-//     hidden: { 
-//       opacity: 0, 
-//       y: 50 
+//     hidden: {
+//       opacity: 0,
+//       y: 50
 //     },
-//     visible: { 
-//       opacity: 1, 
+//     visible: {
+//       opacity: 1,
 //       y: 0,
 //       transition: {
 //         duration: 0.6,
@@ -135,12 +135,12 @@
 //   };
 
 //   const badgeVariants: Variants = {
-//     hidden: { 
-//       opacity: 0, 
-//       x: -20 
+//     hidden: {
+//       opacity: 0,
+//       x: -20
 //     },
-//     visible: { 
-//       opacity: 1, 
+//     visible: {
+//       opacity: 1,
 //       x: 0,
 //       transition: {
 //         duration: 0.6,
@@ -150,10 +150,10 @@
 //   };
 
 //   const roleVariants: Variants = {
-//     hidden: { 
-//       opacity: 0 
+//     hidden: {
+//       opacity: 0
 //     },
-//     visible: { 
+//     visible: {
 //       opacity: 1,
 //       transition: {
 //         duration: 0.6,
@@ -163,12 +163,12 @@
 //   };
 
 //   const descriptionVariants: Variants = {
-//     hidden: { 
-//       opacity: 0, 
-//       y: 20 
+//     hidden: {
+//       opacity: 0,
+//       y: 20
 //     },
-//     visible: { 
-//       opacity: 1, 
+//     visible: {
+//       opacity: 1,
 //       y: 0,
 //       transition: {
 //         duration: 0.6,
@@ -178,12 +178,12 @@
 //   };
 
 //   const ctaVariants: Variants = {
-//     hidden: { 
-//       opacity: 0, 
-//       y: 20 
+//     hidden: {
+//       opacity: 0,
+//       y: 20
 //     },
-//     visible: { 
-//       opacity: 1, 
+//     visible: {
+//       opacity: 1,
 //       y: 0,
 //       transition: {
 //         duration: 0.6,
@@ -206,13 +206,13 @@
 //           background: rgba(255,255,255,0.3) !important;
 //           transition: all 0.4s ease !important;
 //         }
-        
+
 //         .swiper-pagination-bullet-active {
 //           background: white !important;
 //           width: 60px !important;
 //           box-shadow: 0 0 20px rgba(255,255,255,0.5) !important;
 //         }
-        
+
 //         .swiper-pagination {
 //           bottom: 40px !important;
 //           display: flex !important;
@@ -225,12 +225,12 @@
 //         modules={[Autoplay, Pagination, EffectFade]}
 //         effect="fade"
 //         fadeEffect={{ crossFade: true }}
-//         autoplay={{ 
+//         autoplay={{
 //           delay: 6000,
 //           disableOnInteraction: false,
 //           pauseOnMouseEnter: true
 //         }}
-//         pagination={{ 
+//         pagination={{
 //           clickable: true,
 //           dynamicBullets: false
 //         }}
@@ -242,14 +242,14 @@
 //         <SwiperSlide>
 //           <div
 //             className="h-screen bg-cover bg-center flex items-center relative"
-//             style={{ 
+//             style={{
 //               backgroundImage: "url('/hero1.jpeg')",
 //               backgroundAttachment: "fixed"
 //             }}
 //           >
 //             {/* Premium gradient overlay */}
 //             <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/60 to-black/30"></div>
-            
+
 //             {/* Animated particles overlay (subtle) */}
 //             <div className="absolute inset-0 opacity-20">
 //               <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
@@ -337,7 +337,7 @@
 //                     Contact Me
 //                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
 //                   </a>
-                  
+
 //                   <a
 //                     href="#about"
 //                     className="group px-8 py-4 rounded-full border border-white/20 text-sm text-white hover:bg-white/10 transition-all duration-500 flex items-center gap-2"
@@ -355,14 +355,14 @@
 //         <SwiperSlide>
 //           <div
 //             className="h-screen bg-cover bg-center flex items-center relative"
-//             style={{ 
+//             style={{
 //               backgroundImage: "url('/hero2.jpeg')",
 //               backgroundAttachment: "fixed"
 //             }}
 //           >
 //             {/* Premium gradient overlay */}
 //             <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/60 to-black/30"></div>
-            
+
 //             {/* Animated particles overlay */}
 //             <div className="absolute inset-0 opacity-20">
 //               <div className="absolute top-1/3 right-1/3 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
@@ -451,7 +451,7 @@
 //       </Swiper>
 
 //       {/* Elegant scroll indicator */}
-//       <motion.div 
+//       <motion.div
 //         initial={{ opacity: 0 }}
 //         animate={{ opacity: 1 }}
 //         transition={{ delay: 2, duration: 1 }}
@@ -473,19 +473,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
-import { motion, Variants, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowRight, BookOpen, Sparkles, ChevronDown, Award, TrendingUp, Users, Globe } from "lucide-react";
+import {
+  motion,
+  Variants,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
+import {
+  ArrowRight,
+  BookOpen,
+  Sparkles,
+  ChevronDown,
+  Award,
+  TrendingUp,
+  Users,
+  Globe,
+} from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function HeroSlider() {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   // Mouse position for parallax effect
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  
+
   const springConfig = { damping: 50, stiffness: 300 };
   const mouseXSpring = useSpring(mouseX, springConfig);
   const mouseYSpring = useSpring(mouseY, springConfig);
@@ -495,29 +510,29 @@ export default function HeroSlider() {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
+    window.addEventListener("resize", checkMobile);
+
     const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
-      
+
       // Convert to range -1 to 1
       const x = (clientX / innerWidth) * 2 - 1;
       const y = (clientY / innerHeight) * 2 - 1;
-      
+
       mouseX.set(x);
       mouseY.set(y);
     };
-    
+
     if (!isMobile) {
-      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener("mousemove", handleMouseMove);
     }
-    
+
     return () => {
-      window.removeEventListener('resize', checkMobile);
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("resize", checkMobile);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [isMobile, mouseX, mouseY]);
 
@@ -569,7 +584,8 @@ export default function HeroSlider() {
       badgeColor: "text-yellow-400",
       title: nameLetters,
       roles: ["Entrepreneur", "Investor", "Author"],
-      description: "Founder of Loanwalle.com with expertise in finance, business strategy, and entrepreneurship.",
+      description:
+        "Founder of Loanwalle.com with expertise in finance, business strategy, and entrepreneurship.",
       ctaPrimary: { text: "Contact Me", icon: ArrowRight, link: "#contact" },
       ctaSecondary: { text: "Learn More", icon: BookOpen, link: "#about" },
       stats: [
@@ -588,7 +604,8 @@ export default function HeroSlider() {
       title: "Building",
       subtitle: "Businesses",
       roles: ["Finance", "Publishing", "Ventures"],
-      description: "Leading ventures and investing in innovation across industries with a focus on sustainable growth.",
+      description:
+        "Leading ventures and investing in innovation across industries with a focus on sustainable growth.",
       ctaPrimary: { text: "View Books", icon: BookOpen, link: "#books" },
       stats: [
         { value: "5", label: "Published Books", icon: BookOpen },
@@ -608,16 +625,16 @@ export default function HeroSlider() {
           width: 40px !important;
           height: 4px !important;
           border-radius: 0 !important;
-          background: rgba(255,255,255,0.2) !important;
+          background: rgba(255, 255, 255, 0.2) !important;
           transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
         }
-        
+
         .swiper-pagination-bullet-active {
           background: white !important;
           width: 80px !important;
-          box-shadow: 0 0 30px rgba(255,255,255,0.3) !important;
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.3) !important;
         }
-        
+
         .swiper-pagination {
           bottom: 30px !important;
           left: 50% !important;
@@ -643,14 +660,14 @@ export default function HeroSlider() {
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
         fadeEffect={{ crossFade: true }}
-        autoplay={{ 
+        autoplay={{
           delay: 6000,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true
+          pauseOnMouseEnter: true,
         }}
-        pagination={{ 
+        pagination={{
           clickable: true,
-          dynamicBullets: false
+          dynamicBullets: false,
         }}
         loop={true}
         speed={2000}
@@ -670,7 +687,7 @@ export default function HeroSlider() {
                   y: useTransform(mouseYSpring, [-1, 1], [-50, 50]),
                 }}
               />
-              
+
               {/* Animated Gradient Overlay */}
               <motion.div
                 className={`absolute inset-0 bg-gradient-to-r ${slide.gradient} opacity-90`}
@@ -690,11 +707,14 @@ export default function HeroSlider() {
 
               {/* Animated Grid Pattern */}
               <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0" style={{
-                  backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                                    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-                  backgroundSize: '50px 50px'
-                }} />
+                    backgroundSize: "50px 50px",
+                  }}
+                />
               </div>
 
               {/* Floating Particles */}
@@ -740,7 +760,9 @@ export default function HeroSlider() {
                     >
                       <div className="relative">
                         <div className="absolute inset-0 bg-white/20 blur-md rounded-full" />
-                        <slide.badgeIcon className={`relative w-4 h-4 sm:w-5 sm:h-5 ${slide.badgeColor}`} />
+                        <slide.badgeIcon
+                          className={`relative w-4 h-4 sm:w-5 sm:h-5 ${slide.badgeColor}`}
+                        />
                       </div>
                       <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white/60 font-light">
                         {slide.badge}
@@ -754,12 +776,17 @@ export default function HeroSlider() {
                         variants={containerVariants}
                         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light leading-[1.1] tracking-tight"
                       >
-                        {slide.title.map((letter: string, index: number) => (
+                        {(Array.isArray(slide.title)
+                          ? slide.title
+                          : slide.title.split("")
+                        ).map((letter: string, index: number) => (
                           <motion.span
                             key={index}
                             custom={index}
                             variants={letterVariants}
-                            className={letter === " " ? "mr-2 sm:mr-4" : "inline-block"}
+                            className={
+                              letter === " " ? "mr-2 sm:mr-4" : "inline-block"
+                            }
                             style={{
                               textShadow: "0 2px 10px rgba(0,0,0,0.3)",
                             }}
